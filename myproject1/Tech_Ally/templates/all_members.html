@@ -1,0 +1,22 @@
+{% extends "master.html" %}
+
+{% block title %}
+List of All Members
+{% endblock %}
+
+{% block content %}
+    
+        <h1>Members</h1>
+
+        <ul>
+            {% for x in members %}
+            <li onclick="window.location = 'details/{{x.id}}'">{{x.firstname}} {{x.lastname}}</a></li>
+            {% endfor %}
+        </ul>
+
+        <h4><a href="/">Back To Home</a></h4>
+
+{% endblock %}
+    
+
+

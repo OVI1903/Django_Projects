@@ -1,0 +1,19 @@
+{% extends "master.html" %}
+
+{% block title%}
+Member Details
+{% endblock %}
+
+{% block content %}
+
+    
+        <h1>Member Details</h1>
+        <div class="mycard">
+        <ul>
+            <li>Member Name : {{defers.firstname}} {{defers.lastname}}</li>
+            <li>Phone Number: {{defers.phone}}</li>
+            <li>Member Since: {{defers.joined_date}}</li>
+        </ul>
+        {# <p> Back To <a href="/all_members">Previous Page</a></p> #}
+        </div>
+{% endblock %} 
